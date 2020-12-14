@@ -1,0 +1,141 @@
+html{
+  font-size: 62.5%;
+  font-family: 'open sans';
+}
+body{
+  max-width: 1366px;
+  margin: auto;
+}
+.containerHeader1 .contactosHeader{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b1b1d;
+}
+.containerHeader1 .contactosHeader h3{
+  font-size: 1.4rem;
+  margin: 10px 10px;
+  color: #00a776;
+}
+.containerHeader2{
+  display: flex;
+  justify-content: space-between;
+}
+.containerHeader2 figure img {
+  width: 100%;
+}
+.containerHeader2 figure {
+  width: 250px;
+}
+.navegacion{
+  display: flex;
+  align-items: flex-end;
+  margin-right: 3rem;
+  
+}
+.navegacion .menu ul{
+  display: flex;
+}
+.navegacion .menu ul li{
+  margin: auto 20px;
+  list-style: none;
+  font-size: 1.6rem;
+}
+.navegacion .menu ul a{
+  color: #091e3f;
+  text-decoration: none;
+}
+.navegacion2{
+  display: none;
+}
+.hero figure{
+  margin: 0;
+}
+.hero figure img{
+  width: 100%;
+}
+main .titulo{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+main h1{
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: #333333;
+}
+main .titulo{
+  font-size: 5rem;
+  font-family:'changa';
+  color: #27304b;
+  display: flex;
+  justify-content: center;
+ 
+}
+main .titulo h2{
+  margin: 0;
+}
+main .videos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  row-gap: 0;
+  width: 80%;
+  margin: 0 auto 10rem auto;
+  font-family: 'changa';
+
+}
+
+main .videos .video{
+  text-align: center;
+  font-size: 1.8rem;
+  color: #f15e42;
+}
+.responsiveContent {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.2%;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80%;
+
+}
+.responsiveContent iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+  footer{
+
+    background-color: #434f53;
+  }
+.container-footer{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+}
+.container-footer .contactos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+ 
+}
+footer .about-us{
+  width: 70%;
+}
+footer .about-us h3{
+  color: white;
+  font-size: 2rem;
+}
+footer .about-us p{
+  color: #b7b6b4;
+  font-size: 1.6rem;
+}

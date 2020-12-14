@@ -1,0 +1,126 @@
+html{
+  font-size: 62.5%;
+  font-family: 'open sans';
+}
+body{
+  max-width: 1366px;
+  margin: auto;
+}
+.containerHeader1 .contactosHeader{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b1b1d;
+}
+.containerHeader1 .contactosHeader h3{
+  font-size: 1.4rem;
+  margin: 10px 10px;
+  color: #00a776;
+}
+.containerHeader2{
+  display: flex;
+  justify-content: space-between;
+}
+.containerHeader2 figure img {
+  width: 100%;
+}
+.containerHeader2 figure {
+  width: 250px;
+}
+.navegacion{
+  display: flex;
+  align-items: flex-end;
+  margin-right: 3rem;
+  
+}
+.navegacion .menu ul{
+  display: flex;
+}
+.navegacion .menu ul li{
+  margin: auto 20px;
+  list-style: none;
+  font-size: 1.6rem;
+}
+.navegacion .menu ul a{
+  color: #091e3f;
+  text-decoration: none;
+}
+.navegacion2{
+  display: none;
+}
+.hero figure{
+  margin: 0;
+}
+.hero figure img{
+  width: 100%;
+}
+main h1{
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: #333333;
+}
+main .nuestro-equipo .contenido{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+main .nuestro-equipo .contenido .contenido1 figure{
+  width: 213px;
+  height: 242px;
+}
+main .nuestro-equipo .contenido .contenido1 figure img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+main .nuestro-equipo .contenido1 .texto-contenido {
+  text-align: center;
+}
+main .nuestro-equipo .contenido1 .texto-contenido h2{
+  color: #333333;
+  font-size: 2.4rem;
+}
+main .nuestro-equipo .contenido1 .texto-contenido h3{
+  color: #00a776;
+  font-size: 1.6rem;
+}
+main .nuestro-equipo .contenido1 .texto-contenido a{
+  text-decoration: none;
+}
+main .nuestro-equipo .contenido1 .texto-contenido i{
+  font-size: 3rem;
+}
+main > section > div > div > div > a:nth-child(3) > i{
+  margin-right: 1rem;
+}
+  footer{
+
+    background-color: #434f53;
+  }
+.container-footer{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+}
+.container-footer .contactos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+ 
+}
+footer .about-us{
+  width: 70%;
+}
+footer .about-us h3{
+  color: white;
+  font-size: 2rem;
+}
+footer .about-us p{
+  color: #b7b6b4;
+  font-size: 1.6rem;
+}

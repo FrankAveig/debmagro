@@ -1,0 +1,265 @@
+
+
+
+
+html{
+  font-size: 62.5%;
+  font-family: 'open sans';
+}
+body{
+  max-width: 1366px;
+  margin: auto;
+}
+.containerHeader1 .contactosHeader{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b1b1d;
+}
+.containerHeader1 .contactosHeader h3{
+  font-size: 1.4rem;
+  margin: 10px 10px;
+  color: #00a776;
+}
+.containerHeader2{
+  display: flex;
+  justify-content: space-between;
+}
+.containerHeader2 figure img {
+  width: 100%;
+}
+.containerHeader2 figure {
+  width: 250px;
+}
+.navegacion{
+  display: flex;
+  align-items: flex-end;
+  margin-right: 3rem;
+  
+}
+.navegacion .menu ul{
+  display: flex;
+}
+.navegacion .menu ul li{
+  margin: auto 20px;
+  list-style: none;
+  font-size: 1.6rem;
+}
+.navegacion .menu ul a{
+  color: #091e3f;
+  text-decoration: none;
+}
+.navegacion2{
+  display: none;
+}
+.hero figure{
+  margin: 0;
+}
+.hero figure img{
+  width: 100%;
+}
+.caracteristicas{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 6rem auto;
+
+}
+.caracteristicas .caracteristica{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+.caracteristicas .caracteristica{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.caracteristicas .caracteristica h2{
+  font-size: 2rem;
+}
+.caracteristicas .caracteristica p{
+  font-size: 1.6rem;
+  text-align: justify;
+}
+.enganche{
+  display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.enganche figure{
+  margin: 0;
+  width: 100%;
+}
+.enganche figure img{
+  width: 100%;
+}
+.enganche .texto-enganche{
+  background: rgb(237, 249, 245);;
+  text-align: center;
+}
+.enganche .texto-enganche h2{
+  margin-top: 5rem;
+  font-size: 4rem;
+  color:  #00a776;
+}
+.enganche .texto-enganche p{
+  font-size: 3rem;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+.partes-causas{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.partes-causas img{
+  width: 100%;
+}
+body > main > section.causas > div.partes-causas > div.causa.parte3-causas > figure > img{
+  width: 104%;
+}
+
+.causas{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.causas h2{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.causas p{
+  width: 70%;
+  margin: auto;
+  color: #666666;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+.causas .titulo-causas h2{
+  font-size: 4rem;
+  color:  #00a776;
+  text-align: center;
+}
+.causas .titulo-causas h3{
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+.estadisticas{
+  background-color: rgb(0, 167, 118);
+}
+.estadistica h2{
+  font-size: 5rem;
+  font-weight: 500;
+}
+.estadistica p{
+  font-size: 2rem;
+}
+.contenedor-estadisticas{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  color: white;
+  width: 80%;
+  margin: auto;
+
+}
+.contenedor-estadisticas .parrafo h2{
+  font-size: 3rem;
+  font-weight: 400;
+}
+.contenedor-estadisticas .parrafo{
+  margin-top: 2rem;
+  width: 90%;
+}
+.contenedor-estadisticas .parrafo p{
+  font-size: 1.6rem;
+  
+
+}
+
+.proyectos{
+  margin: 5rem auto;
+}
+.proyectos .partes-proyectos{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.proyectos .titulo-proyectos h2{
+  font-size: 4rem;
+  color:  #00a776;
+  text-align: center;
+  font-weight: 500;
+}
+.proyectos img{
+  width: 100%;
+  height: 277px;
+}
+
+
+.get-contacto{
+  background: rgb(0, 167, 118);
+  text-align: center;
+  color: white;
+}
+.get-contacto h2{
+  font-size: 4rem;
+}
+.get-contacto p{
+  font-size: 3rem;
+  
+  
+}
+.texto-contacto{
+  padding-top: 5rem ;
+  padding-bottom: 5rem;
+}
+  
+  button {background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%)}
+  button {
+     margin: auto;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     border-radius: 10px;
+     display: block;
+   }
+
+   button:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  footer{
+
+    background-color: #434f53;
+  }
+.container-footer{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+}
+.container-footer .contactos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+ 
+}
+footer .about-us{
+  width: 70%;
+}
+footer .about-us h3{
+  color: white;
+  font-size: 2rem;
+}
+footer .about-us p{
+  color: #b7b6b4;
+  font-size: 1.6rem;
+}
