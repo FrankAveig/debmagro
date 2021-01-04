@@ -18,33 +18,33 @@
       <ul>
         <li><a href="./index.html">Inicio</a> </li> 
         <li><a href="./videos.html">Videos</a> </li> 
-        <li><a href="#servicios">Servicios</a> </li> 
-        <li><a href="#personal">Personal</a></li>
+\        <li><a href="./personal.html">Personal</a></li>
+        <li><a href="./cotizacion.html">Cotizacion</a></li>
         <li><a href="./contactanos.html">Contactanos</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="./proximamente.html">Tienda</a></li>
       </ul>
     </nav>
   </section>
 <header>
   <section class="containerHeader1">
     <section class="contactosHeader">
-      <div class="ubicacion">
-        <i class="icon-location"></i>
+      <div class="ubicacion contacto">
+        <i class="icon-location contacto"></i>
         <h3>Avenida Guayaquil y calle Milagro 593 El Empalme, Ecuador</h3>
       </div>
-      <div class="email">
-        <i class="icon-envelope-o"></i>
+      <div class="email contacto">
+        <i class="icon-envelope-o contacto"></i>
         <h3>administrativo@debmagro.com	</h3>
       </div>
-      <div class="telefono">
-        <i class="icon-mobile"></i>
+      <div class="telefono contacto">
+        <i class="icon-mobile contacto"></i>
         <h3>0985259266</h3>
       </div>
     </section>
-    <section class="redesSociales">
+<!--     <section class="redesSociales">
       <a href="https://www.facebook.com/consultoriodrmiller"><i class="icon-facebook"></i></a>
       <a href="https://www.instagram.com/milleraveiga/"><i class="icon-instagram"></i></a>
-    </section>
+    </section> -->
   </section>
   <section class="containerHeader2">
     <figure>
@@ -55,9 +55,11 @@
         <ul>
           <li><a href="./index.html">Inicio</a> </li> 
           <li><a href="./videos.html">Videos</a> </li> 
-          <li><a href="./personal.html">Personal</a></li>
+  \        <li><a href="./personal.html">Personal</a></li>
+          <li><a href="./cotizacion.html">Cotizacion</a></li>
           <li><a href="./contactanos.html">Contactanos</a></li>
-          <li><a href="https://debmagro.com/tienda">Tienda</a></li>        </ul>
+          <li><a href="./proximamente.html">Tienda</a></li>
+         </ul>
       </nav>
     </section>
   </section>
@@ -69,6 +71,16 @@
 </figure>
 </section> -->
 <main>
+  <a class="app-whatsapp" id="app-whatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=593985259266&amp;text=Necesito&nbsp;Información" style="	position: fixed;
+right: 24px;
+bottom: 25px;
+width: 60px;
+z-index: 1000;
+display: block;
+bottom: 95px;
+">
+  <img src="./imagenes/whatsapp.png" alt="" style="width: 65px;">
+</a>
   <h1>VIDEOS</h1>
   <section class="videos">
 
@@ -90,24 +102,23 @@
       </div>
 </section>
 </main>
-</body>
 <footer>
   <div class="container-footer">
-
+    
     <div class="about-us">
       <h3>Acerca de nosotros</h3>
       <p>DEBMAGRO S.A., Empresa ecuatoriana, dedicada al diseño e 
         instalación sistemas de riego, distribucion de tuberias , mangueras
-         y accesorios PLASTIGAMA..</p>
-  </div>
-  <div class="contactos">
-    <div class="direccion">
-      <i></i>
-      <p> Avenida Guayaquil y calle Milagro 593 El Empalme, Ecuador</p>
-    </div>
-    <div class="direccion">
-      <i></i>
-      <p>0985259266</p>
+        y accesorios PLASTIGAMA..</p>
+      </div>
+      <div class="contactos">
+        <div >
+          <i></i>
+          <p> Avenida Guayaquil y calle Milagro 593 El Empalme, Ecuador</p>
+        </div>
+        <div class="direccion">
+          <i></i>
+          <p>0985259266</p>
     </div>
     <div class="direccion">
       <i></i>
@@ -116,4 +127,17 @@
   </div>
 </div>
 </footer>
+<script>
+  const menu = document.querySelector('.menu');
+  const burgerButton = document.querySelector('.burger-button');
+  burgerButton.addEventListener('click',hideShow);
+  function hideShow(){
+  if (menu.classList.contains('is-active')){
+    menu.classList.remove('is-active');
+  }else{
+  menu.classList.add('is-active');
+  }
+  }
+</script>
+</body>
 </html>

@@ -1,3 +1,67 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?vb2r15');
+  src:  url('../fonts/icomoon.eot?vb2r15#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vb2r15') format('truetype'),
+    url('../fonts/icomoon.woff?vb2r15') format('woff'),
+    url('../fonts/icomoon.svg?vb2r15#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-whatsapp:before {
+  content: "\e907";
+  color: #25d366;
+}
+.icon-twitter:before {
+  content: "\e902";
+  color: #1da1f2;
+}
+.icon-instagram:before {
+  content: "\e904";
+  color: #e4405f;
+}
+.icon-facebook:before {
+  content: "\e903";
+  color: #1877f2;
+}
+.icon-envelope-o:before {
+  content: "\e900";
+}
+.icon-phone:before {
+  content: "\e905";
+}
+.icon-tablet:before {
+  content: "\e905";
+}
+.icon-mobile:before {
+  content: "\e905";
+}
+.icon-location:before {
+  content: "\e908";
+}
+.icon-map:before {
+  content: "\e908";
+}
+.icon-menu:before {
+  content: "\e906";
+}
 html{
   font-size: 62.5%;
   font-family: 'open sans';
@@ -47,6 +111,17 @@ body{
 .navegacion2{
   display: none;
 }
+.navegacion .menu ul li a:hover{
+  color:#00a776; ;
+  }
+.contactosHeader i{
+  color: #00a776;
+  }
+.contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 .hero figure{
   margin: 0;
 }
@@ -149,4 +224,111 @@ footer .about-us p{
   color: #b7b6b4;
   font-size: 1.6rem;
 }
+.burger-button{
+  display: none;
+  width: 4rem;
+   height: 4rem;
+   border-radius: 0;
+   background :  #00a776;
+   line-height: 4rem;
+   text-align: center;
+   position: fixed;
+   color: white;
+   border-radius: 50%;
+   font-size: 1.6rem;
+   margin: 0.3rem 0 0 0.3rem;
+   z-index: 3;
+ }
+ @media screen and (max-width:1024px){
+ .formulario{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+ }
+ iframe{
+   width: 400px!important;
+ }
+ .formulario form{
+   margin-bottom: 3rem;
+ }
+}
 
+@media screen and (max-width:800px){
+  .hero  img{
+    height: 40vh;
+  }
+  
+}
+@media screen and (max-width:777px){
+
+  .containerHeader2 figure{
+    display: none;
+  }
+  .containerHeader1 .contactosHeader{
+    justify-content: center;
+  }
+  .ubicacion{
+    display: none;
+  }
+}
+@media screen and (max-width:667px){
+  .burger-button{
+    display: block;
+   }
+  .navegacion{
+    display: none;
+  }
+  .navegacion2{
+    display: block;
+  }
+  .navegacion .menu ul li a:hover{
+    color:white; ;
+    }
+  .navegacion2 nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    background: rgba(0, 167, 118, .8);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    left: -100vw;
+    transition: .3s;
+  }
+  .navegacion2 nav ul{
+  list-style: none;
+  flex-direction: column;
+
+}
+.navegacion nav ul li{
+  margin-top: 5rem!important;
+
+}
+.navegacion2 nav.is-active{
+  left: 0vw;
+}
+.containerHeader2 figure{
+  display: flex;
+  margin: auto;
+}
+}
+@media screen and (max-width:667px){
+
+footer .about-us{
+  display: none;
+}
+.container-footer{
+  display: block;
+}
+}
+@media screen and (max-width:480px){
+
+  .proyectos .partes-proyectos{
+    width: 100%;
+  }
+  iframe{
+    width: 300px!important;
+  }
+}
