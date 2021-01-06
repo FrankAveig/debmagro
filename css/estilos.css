@@ -371,7 +371,7 @@ body > main > section.causas > div.partes-causas > div:nth-child(4) > figure > i
 .container-footer{
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
   margin: auto;
 }
 .container-footer .contactos{
@@ -393,6 +393,18 @@ footer .about-us h3{
 footer .about-us p{
   color: #b7b6b4;
   font-size: 1.6rem;
+}
+footer .alianzas{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  align-items: center;
+}
+footer .alianzas figure{
+  width: 100%;
+
+}
+footer .alianzas figure img{
+  width: 100%;
 }
 .burger-button{
  display: none;
