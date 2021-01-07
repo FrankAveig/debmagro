@@ -200,7 +200,7 @@ iframe{
 .container-footer{
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
   margin: auto;
 }
 .container-footer .contactos{
@@ -238,6 +238,28 @@ footer .about-us p{
    margin: 0.3rem 0 0 0.3rem;
    z-index: 3;
  }
+ footer .about-us{
+  width: 70%;
+}
+footer .about-us h3{
+  color: white;
+  font-size: 2rem;
+}
+footer .about-us p{
+  color: #b7b6b4;
+  font-size: 1.6rem;
+}
+footer .alianzas{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  align-items: center;
+}
+footer .alianzas figure{
+  width: 100%;
+
+}
+footer .alianzas figure img{
+  width: 100%;}
  @media screen and (max-width:1024px){
  .formulario{
   display: flex;
@@ -250,6 +272,17 @@ footer .about-us p{
  .formulario form{
    margin-bottom: 3rem;
  }
+ footer .about-us{
+  display: none;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+footer .alianzas figure{
+  margin: 0;
+}
 }
 
 @media screen and (max-width:800px){

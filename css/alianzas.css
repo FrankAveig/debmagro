@@ -117,7 +117,7 @@ body{
 .contactosHeader i{
   color: #00a776;
   }
-  .contacto{
+.contacto{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,62 +128,16 @@ body{
 .hero figure img{
   width: 100%;
 }
-main .titulo{
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-}
+
 main h1{
   text-align: center;
-  font-size: 4.8rem;
+  font-size: 8rem;
   font-weight: 800;
   color: #333333;
-}
-main .titulo{
-  font-size: 5rem;
-  font-family:'changa';
-  color: #27304b;
-  display: flex;
-  justify-content: center;
  
 }
-main .titulo h2{
-  margin: 0;
-}
-main .videos{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 45px;
-  row-gap: 0;
-  width: 80%;
-  margin: 0 auto 10rem auto;
-  font-family: 'changa';
 
-}
 
-main .videos .video{
-  text-align: center;
-  font-size: 1.8rem;
-  color: #f15e42;
-}
-.responsiveContent {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.2%;
-  margin: auto;
-  margin-bottom: 20px;
-  width: 80%;
-
-}
-.responsiveContent iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-}
   footer{
 
     background-color: #434f53;
@@ -214,28 +168,29 @@ footer .about-us p{
   color: #b7b6b4;
   font-size: 1.6rem;
 }
-footer .about-us{
-  width: 70%;
-}
-footer .about-us h3{
-  color: white;
-  font-size: 2rem;
-}
-footer .about-us p{
-  color: #b7b6b4;
-  font-size: 1.6rem;
-}
-footer .alianzas{
+.alianzas{
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4,1fr);
+}
+.alianzas figure{
+  width: 70%;
+  grid-column-start: 1;
+  margin: auto;
+}
+.alianzas figure img{
+  width: 100%;
+}
+.alianzas .texto-alianzas{
+  width: 70%;
+  display: flex;
+  margin: auto;
   align-items: center;
 }
-footer .alianzas figure{
-  width: 100%;
-
+.alianzas .texto-alianzas p{
+  font-size: 1.6rem;
+  text-align: justify;
 }
-footer .alianzas figure img{
-  width: 100%;}
 .burger-button{
   display: none;
   width: 4rem;
@@ -251,108 +206,153 @@ footer .alianzas figure img{
    margin: 0.3rem 0 0 0.3rem;
    z-index: 3;
  }
+ footer .about-us{
+  width: 70%;
+}
+footer .about-us h3{
+  color: white;
+  font-size: 2rem;
+}
+footer .about-us p{
+  color: #b7b6b4;
+  font-size: 1.6rem;
+}
+footer .alianzas2{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  align-items: center;
+}
+footer .alianzas2 figure{
+  width: 100%;
+  margin: 0;
+}
+footer .alianzas2 figure img{
+  width: 100%;
+}
+ @media screen and (max-width:1024px){
+ .formulario{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+ }
+ iframe{
+   width: 400px!important;
+ }
+ .formulario form{
+   margin-bottom: 3rem;
+ }
+ .alianzas{
+  display: flex;
+  flex-direction: column;
+ }
+ .alianzas figure {
+  width: 50%;
+}
+ .alianzas .texto-alianzas{
+   margin: 0 auto 3rem auto;
+ }
+ footer .about-us{
+  display: none;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+footer .alianzas figure{
+  margin: 0;
+}
+}
 
-@media screen and (max-width:1024px){
-  .formulario{
-   display: flex;
-   flex-direction: column-reverse;
-   align-items: center;
+@media screen and (max-width:800px){
+  .hero  img{
+    height: 40vh;
   }
-  footer .about-us{
+  main h1{
+    font-size: 5rem;
+  }
+ 
+  .alianzas{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:777px){
+
+  .containerHeader2 figure{
     display: none;
   }
-  .container-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-  footer .alianzas figure{
-    margin: 0;
+  .containerHeader1 .contactosHeader{
+    justify-content: center;
   }
-
- }
- 
- @media screen and (max-width:800px){
-   .hero  img{
-     height: 40vh;
+  .ubicacion{
+    display: none;
+  }
+}
+@media screen and (max-width:667px){
+  .burger-button{
+    display: block;
    }
-   .container-footer {
+  .navegacion{
+    display: none;
+  }
+  .navegacion2{
+    display: block;
+  }
+  .navegacion2 nav{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    background: rgba(0, 167, 118, .8);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
     align-items: center;
-   }
- }
- @media screen and (max-width:777px){
- 
-   .containerHeader2 figure{
-     display: none;
-   }
-   .containerHeader1 .contactosHeader{
-     justify-content: center;
-   }
-   .ubicacion{
-     display: none;
-   }
- }
- @media screen and (max-width:667px){
-   .burger-button{
-     display: block;
-    }
-   .navegacion{
-     display: none;
-   }
-   .navegacion2{
-     display: block;
-   }
-   .navegacion .menu ul li a:hover{
-    color:white; ;
-    }
-   .navegacion2 nav{
-     display: flex;
-     justify-content: center;
-     text-align: center;
-     position: fixed;
-     background: rgba(0, 167, 118, .8);
-     z-index: 2;
-     width: 100%;
-     height: 100%;
-     align-items: center;
-     left: -100vw;
-     transition: .3s;
-   }
-   .navegacion2 nav ul{
-   list-style: none;
-   flex-direction: column;
- 
- }
- .navegacion nav ul li{
-   margin-top: 5rem!important;
- 
- }
- .navegacion2 nav.is-active{
-   left: 0vw;
- }
- .containerHeader2 figure{
-   display: flex;
-   margin: auto;
- }
+    left: -100vw;
+    transition: .3s;
+  }
+  .navegacion2 nav ul{
+  list-style: none;
+  flex-direction: column;
 
 }
- @media screen and (max-width:667px){
- 
- footer .about-us{
-   display: none;
- }
- 
- main .videos{
+.navegacion nav ul li{
+  margin-top: 5rem!important;
 
-   grid-template-columns: 1fr;
+}
+.navegacion2 nav.is-active{
+  left: 0vw;
+}
+.navegacion .menu ul li a:hover{
+  color:white; ;
   }
- }
- @media screen and (max-width:480px){
- 
-   .proyectos .partes-proyectos{
-     width: 100%;
-   }
+.containerHeader2 figure{
+  display: flex;
+  margin: auto;
+}
+.alianzas figure{
+  margin: auto auto 0 auto;
+}
+.alianzas .texto-alianzas{
+  margin: 0 auto 0 auto;
+}
+}
+@media screen and (max-width:667px){
 
- }
+footer .about-us{
+  display: none;
+}
+.container-footer{
+  display: block;
+}
+}
+@media screen and (max-width:480px){
+
+  .proyectos .partes-proyectos{
+    width: 100%;
+  }
+  iframe{
+    width: 300px!important;
+  }
+}

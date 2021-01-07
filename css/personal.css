@@ -185,7 +185,7 @@ main > section > div > div > div > a:nth-child(3) > i{
 .container-footer{
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
   margin: auto;
 }
 .container-footer .contactos{
@@ -208,6 +208,28 @@ footer .about-us p{
   color: #b7b6b4;
   font-size: 1.6rem;
 }
+footer .about-us{
+  width: 70%;
+}
+footer .about-us h3{
+  color: white;
+  font-size: 2rem;
+}
+footer .about-us p{
+  color: #b7b6b4;
+  font-size: 1.6rem;
+}
+footer .alianzas{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  align-items: center;
+}
+footer .alianzas figure{
+  width: 100%;
+
+}
+footer .alianzas figure img{
+  width: 100%;}
 .burger-button{
   display: none;
   width: 4rem;
@@ -233,6 +255,17 @@ footer .about-us p{
 
   .formulario form{
     margin-bottom: 3rem;
+  }
+  footer .about-us{
+    display: none;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+  footer .alianzas figure{
+    margin: 0;
   }
  }
  

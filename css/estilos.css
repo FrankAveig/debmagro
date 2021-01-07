@@ -448,6 +448,17 @@ footer .alianzas figure img{
   .proyectos .partes-proyectos{
     grid-template-columns: repeat(2, 1fr);
   }
+  footer .about-us{
+    display: none;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+  footer .alianzas figure{
+    margin: 0;
+  }
 }
 @media screen and (max-width:800px){
   .hero  img{
@@ -465,6 +476,7 @@ footer .alianzas figure img{
   .contenedor-estadisticas{
     width: 90%;
   }
+ 
 }
 @media screen and (max-width:777px){
 
@@ -528,9 +540,6 @@ footer .alianzas figure img{
   display: flex;
   margin: auto;
 }
-}
-@media screen and (max-width:667px){
-
 .partes-causas{
   grid-template-columns: 1fr;
 }
@@ -544,12 +553,7 @@ footer .alianzas figure img{
 .proyectos .partes-proyectos{
   width: 80%;
 }
-footer .about-us{
-  display: none;
-}
-.container-footer{
-  display: block;
-}
+
 }
 @media screen and (max-width:480px){
 
