@@ -64,10 +64,6 @@
 }
 
 
-i{
-  color: white;
-}
-
 
 html{
   font-size: 62.5%;
@@ -76,6 +72,9 @@ html{
 body{
   max-width: 1366px;
   margin: auto;
+}
+a{
+  text-decoration: none;
 }
 .containerHeader1 .contactosHeader{
   display: flex;
@@ -93,6 +92,7 @@ body{
 }
 .containerHeader2 figure img {
   width: 100%;
+  margin: -28px auto;
 }
 .containerHeader2 figure {
   width: 250px;
@@ -144,6 +144,25 @@ body > header > section.containerHeader2 > section > nav > ul > li:nth-child(1) 
   width: 100%;
   height: 80vh;
 }
+
+/* .hero h2{
+  position: relative;
+    top: 30%;
+    left: 10%;
+    color: white;
+    font-weight: 500;
+    font-style: normal;    
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+
+} */
+body > section.hero > ul > li > h2 > a > button{
+  margin: 2rem 0 0 0 !important;
+
+background: #0d55a5;
+ border: none;
+}
 .hero ul{
   padding: 0;
   display: flex;
@@ -155,6 +174,7 @@ body > header > section.containerHeader2 > section > nav > ul > li:nth-child(1) 
 .hero li{
   list-style: none;
   width: 100%;
+  height: 80vh;
 }
 
 @keyframes cambio{
@@ -167,6 +187,11 @@ body > header > section.containerHeader2 > section > nav > ul > li:nth-child(1) 
   70% { margin-left: -200%;}
   100% { margin-left: -200%;}
 
+}
+.fixPosition{
+  width: 100%;
+  display: flex;
+ 
 }
 .caracteristicas{
   display: grid;
@@ -205,10 +230,13 @@ body > header > section.containerHeader2 > section > nav > ul > li:nth-child(1) 
 }
 .enganche figure img{
   width: 100%;
+  height: 100%;
 }
 .enganche .texto-enganche{
-  background: rgb(237, 249, 245);;
-  text-align: center;
+  background: rgb(237, 249, 245);
+  
+/*  background-image: url(../imagenes/gotas.jpg); */
+ text-align: center;
 }
 .enganche .texto-enganche h2{
   margin-top: 5rem;
@@ -219,23 +247,26 @@ body > header > section.containerHeader2 > section > nav > ul > li:nth-child(1) 
   font-size: 3rem;
   width: 80%;
   margin: auto;
-  text-align: left;
+  text-align: justify;
+}
+.texto-enganche > p:nth-child(2) {
+  word-spacing: 7pt;
 }
 .partes-causas{
   display: grid;
   grid-template-columns: repeat(4,1fr);
 }
 .partes-causas img{
-  width: 100%;
+  width: 97%;
 }
 body > main > section.causas > div.partes-causas > div.causa.parte4-causas > figure{
   width: 84%;
 }
 body > main > section.causas > div.partes-causas > div.causa.parte4-causas,div.causa.parte3-causas > figure > img{
-  width: 104%;
+  width: 100%;
 }
 body > main > section.causas > div.partes-causas > div:nth-child(4) > figure > img{
-  width: 93%!important;
+  width: 89%!important;
 }
 
 .causas{
@@ -394,6 +425,9 @@ footer .about-us p{
   color: #b7b6b4;
   font-size: 1.6rem;
 }
+footer .contactos .direccion:nth-child(3) p{
+  margin-top: 0;
+}
 footer .alianzas{
   display: grid;
   grid-template-columns: 200px 200px;
@@ -479,6 +513,51 @@ footer .alianzas figure img{
  
 }
 @media screen and (max-width:777px){
+  .containerHeader2 figure img {
+    margin: -28px auto -5px;
+  }
+  .hero li{
+    height: auto;
+  }
+  .burger-button{
+    display: block;
+   }
+  .navegacion{
+    display: none;
+  }
+  .navegacion2{
+    display: block;
+  }
+  .navegacion .menu ul li a:hover{
+    color:white; ;
+    }
+  .navegacion2 nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    background: rgba(0, 167, 118, .8);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    left: -100vw;
+    transition: .3s;
+  }
+  .navegacion2 nav ul{
+  list-style: none;
+  flex-direction: column;
+
+}
+.navegacion nav ul li{
+  margin-top: 5rem!important;
+
+}
+.navegacion2 nav.is-active{
+  left: 0vw;
+}
+
+
 
   .containerHeader2 figure{
     display: none;

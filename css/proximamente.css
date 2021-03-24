@@ -86,6 +86,7 @@ body{
 }
 .containerHeader2 figure img {
   width: 100%;
+  margin: -28px auto;
 }
 .containerHeader2 figure {
   width: 250px;
@@ -178,6 +179,9 @@ footer .about-us h3{
 footer .about-us p{
   color: #b7b6b4;
   font-size: 1.6rem;
+}
+footer .contactos .direccion:nth-child(3) p{
+  margin-top: 0;
 }
 footer .alianzas{
   display: grid;
@@ -301,7 +305,12 @@ footer .about-us{
 }
 }
 @media screen and (max-width:480px){
-
+  main h1{
+    font-size: 3rem;
+  }
+  footer .alianzas {
+    margin: auto -38px;
+    }
   .proyectos .partes-proyectos{
     width: 100%;
   }
