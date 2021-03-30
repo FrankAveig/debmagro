@@ -194,15 +194,19 @@ main .videos .video{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   margin: auto;
+  align-items: center;
+
 }
 .container-footer .contactos{
-  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   color: #ffffff;
   font-size: 1.6rem;
  
+}
+body > footer > div > div.contactos > div:nth-child(1){
+  font-weight: bold;
 }
 footer .about-us{
   width: 70%;
@@ -230,16 +234,25 @@ footer .contactos .direccion:nth-child(3) p{
   margin-top: 0;
 }
 footer .alianzas{
+  margin: 3.5rem;
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-rows: repeat(5,60px);
+  grid-template-columns: 200px;
   align-items: center;
+  justify-content: center;
 }
 footer .alianzas figure{
   width: 100%;
+  height: 100%;
 
 }
 footer .alianzas figure img{
-  width: 100%;}
+  width: 100%;
+  height: 80%;
+}
+body > footer > div > div.alianzas > figure:nth-child(5){
+  height: 75%;
+}
 .burger-button{
   display: none;
   width: 4rem;
